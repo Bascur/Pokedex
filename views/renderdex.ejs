@@ -1,0 +1,27 @@
+<%- include("partials/header") -%>
+
+    <div id="picture">
+        <img src="<%= pk_sprite %> " alt="pksprite" height="170" width="170" />
+    </div>
+    <%- include("partials/middle") -%>
+
+        <!-- Render the data-->
+        <div id="stats">
+            <strong>Name:</strong>
+            <%= pk_name %><br />
+                <strong>Type:</strong>
+                <%= pk_type %><br />
+                    <strong>Height:</strong>
+                    <%= pk_height %> decimeters<br />
+                        <strong>Weight:</strong>
+                        <%= pk_weight %> hectograms<br /><br />
+                            <strong><%= pk_genus %> </strong><br />
+                            <p>
+                                <%= pk_description %>
+                            </p>
+        </div>
+        <div id="yellowBox1">
+            <%- include("search") -%>
+        </div>
+
+        <%- include("partials/footer") -%>
